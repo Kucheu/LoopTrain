@@ -7,13 +7,11 @@ public class TrainWagonsController : MonoBehaviour
     public bool isBuildingMode;
 
     [SerializeField]
-    private Vector3 offset;
-    [SerializeField]
-    private Vector3 entryOffset;
-    [SerializeField]
     private WagonController testingPrefab;
     [SerializeField]
     private WagonController wagonPrefab;
+    [SerializeField]
+    private TrainWagonMovement TrainWagonMovement;
 
     List<WagonController> currentWagons;
     List<int> closeWagons;
@@ -35,7 +33,7 @@ public class TrainWagonsController : MonoBehaviour
 
     private void AddWagonOnPosition(int index)
     {
-        WagonController newWagon = Instantiate(wagonPrefab);
+        WagonController newWagon = Instantiate(wagonPrefab, transform);
         currentWagons.Add(newWagon);
         int currentIndex = currentWagons.Count - 1;
         while(currentIndex > index)
@@ -68,9 +66,9 @@ public class TrainWagonsController : MonoBehaviour
         closeWagons.Clear();
         for (int i = 0; i < currentWagons.Count; i++)
         {
-            if(Vector3.Distance(GetWagonPosition(i), worldMousePosition) < 1f)
+            if(Vector3.Distance(GetWagonPosition(i), worldMousePosition) < 0.1f)
             {
-                if(i == 0 && currentWagons.Count > 1 && Vector3.Distance(GetWagonPosition(1), worldMousePosition) >= 1f)
+                if(i == 0 && currentWagons.Count > 1 && Vector3.Distance(GetWagonPosition(1), worldMousePosition) >= 0.1f)
                 {
                     closeWagons.Add(-1);
                 }
@@ -90,14 +88,14 @@ public class TrainWagonsController : MonoBehaviour
         {
             if(i <= closeWagons[0])
             {
-                currentWagons[i].SetPosition(GetWagonPosition(i), transform.rotation);
+                currentWagons[i].SetPosition(GetWagonPosition(i), GetWagonRotation(i));
             }
             else
             { 
-                currentWagons[i].SetPosition(GetWagonPosition(i+1), transform.rotation);
+                currentWagons[i].SetPosition(GetWagonPosition(i+1), GetWagonRotation(i));
             }
         }
-        testingPrefab.SetPosition(GetWagonPosition(closeWagons[1]), transform.rotation);
+        testingPrefab.SetPosition(GetWagonPosition(closeWagons[1]), GetWagonRotation(closeWagons[1]));
     }
 
 
@@ -111,6 +109,22 @@ public class TrainWagonsController : MonoBehaviour
 
     private Vector3 GetWagonPosition(int wagonIndex)
     {
-        return entryOffset + transform.position + (offset * wagonIndex);
+        return TrainWagonMovement.GetPositionForWagon(wagonIndex);
+    }
+
+    private Quaternion GetWagonRotation(int wagonIndex)
+    {
+        Vector3 target;
+        if(wagonIndex == 0)
+        {
+            target = transform.position;
+        }
+        else
+        {
+            target = currentWagons[wagonIndex - 1].transform.position;
+        }
+        Vector3 relativePos = target - currentWagons[wagonIndex].transform.position;
+        float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
+        return Quaternion.AngleAxis(angle, Vector3.forward);
     }
 }
