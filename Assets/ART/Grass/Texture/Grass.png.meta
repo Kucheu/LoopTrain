@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: b01981c5675eb4948b9353040d581ba3
+guid: 8f6c67d512756b44083929eb723c9de6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5149765469831812890
-    second: RailwayTRIM 1_0
-  - first:
-      213: 1008285937155002437
-    second: RailwayTRIM 1_1
-  - first:
-      213: 7656168794869053943
-    second: RailwayTRIM 1_2
-  - first:
-      213: -7966040521057951555
-    second: RailwayTRIM 1_3
+      213: -1347532211411968617
+    second: Grass_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -122,89 +113,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: RailwayTRIM 1_0
+      name: Grass_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 480
-        width: 26
-        height: 32
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 1, z: 0, w: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6e82a1ef69b5888b0800000000000000
-      internalID: -5149765469831812890
+      spriteID: 79d946fd79a9c4de0800000000000000
+      internalID: -1347532211411968617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RailwayTRIM 1_1
+      name: Grass_1
       rect:
         serializedVersion: 2
-        x: 29
-        y: 415
-        width: 96
-        height: 97
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 1, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 540552cb7b62efd00800000000000000
-      internalID: 1008285937155002437
+      spriteID: aedd233275b66294991eca401b4ee4c1
+      internalID: -1307209799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RailwayTRIM 1_2
+      name: Grass_2
       rect:
         serializedVersion: 2
-        x: 124
-        y: 419
-        width: 92
-        height: 92
+        x: 32
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 1, z: 1, w: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7f9b99e64fc204a60800000000000000
-      internalID: 7656168794869053943
+      spriteID: 2dacf3762c2493948940fdfe58af7f24
+      internalID: 2066139669
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: RailwayTRIM 1_3
+      name: Grass_3
       rect:
         serializedVersion: 2
-        x: 224
-        y: 462
-        width: 74
-        height: 50
+        x: 0
+        y: 0
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 1, y: 0, z: 1, w: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: db029fb1a50f27190800000000000000
-      internalID: -7966040521057951555
+      spriteID: e78a2c673d07bf74bbe6ca884d6a1d80
+      internalID: -138440106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_4
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b9baabd9b54ea14cb94812302a3b97b
+      internalID: -735587813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Grass_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3fb32eeadd05d7439c7382a25d16d63
+      internalID: -868884991
       vertices: []
       indices: 
       edges: []
@@ -213,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 228b548bbc2b47a41b4bf40e4477863f
+    spriteID: 58a8d0a065ab28b469040230160fbec6
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +258,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      RailwayTRIM 1_0: -5149765469831812890
-      RailwayTRIM 1_1: 1008285937155002437
-      RailwayTRIM 1_2: 7656168794869053943
-      RailwayTRIM 1_3: -7966040521057951555
+      Grass_0: -1347532211411968617
+      Grass_1: -1307209799
+      Grass_2: 2066139669
+      Grass_3: -138440106
+      Grass_4: -735587813
+      Grass_5: -868884991
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
