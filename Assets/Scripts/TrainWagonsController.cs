@@ -1,17 +1,18 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TrainWagonsController : MonoBehaviour
 {
-    public bool isBuildingMode;
-
     [SerializeField]
     private WagonController testingPrefab;
     [SerializeField]
     private WagonController wagonPrefab;
     [SerializeField]
     private TrainWagonMovement TrainWagonMovement;
+    [SerializeField]
+    private GameplayManager gameplayManager;
 
     List<WagonController> currentWagons;
     List<int> closeWagons;
@@ -23,17 +24,33 @@ public class TrainWagonsController : MonoBehaviour
         currentWagons.AddRange(GetComponentsInChildren<WagonController>());
     }
 
+    private void OnEnable()
+    {
+        StartCoroutine(AddFirstWagonCoroutine());
+    }
+
+    private IEnumerator AddFirstWagonCoroutine()
+    {
+        yield return new WaitUntil(() => gameplayManager.CurrentGameState == GameState.Playing);
+        AddWagonOnPosition(0);
+    }
+
     private void Update()
     {
-        if(isBuildingMode && Input.GetKeyDown(KeyCode.Mouse0) && closeWagons.Count == 2)
+        if(gameplayManager.CurrentGameState == GameState.Building && Input.GetKeyDown(KeyCode.Mouse0) && closeWagons.Count == 2)
         {
             AddWagonOnPosition(closeWagons[1]);
+        }
+        SetWagonPositions();
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            gameplayManager.ChangeGameState(GameState.Building);
         }
     }
 
     private void AddWagonOnPosition(int index)
     {
-        WagonController newWagon = Instantiate(wagonPrefab, transform);
+        WagonController newWagon = Instantiate(wagonPrefab);
         currentWagons.Add(newWagon);
         int currentIndex = currentWagons.Count - 1;
         while(currentIndex > index)
@@ -42,12 +59,12 @@ public class TrainWagonsController : MonoBehaviour
             currentIndex--;
         }
         currentWagons[index] = newWagon;
-        isBuildingMode = false;
+        gameplayManager.ChangeGameState(GameState.Playing);
     }
 
-    private void FixedUpdate()
+    private void SetWagonPositions()
     {
-        if (isBuildingMode && CheckIfCloseEnought())
+        if (gameplayManager.CurrentGameState == GameState.Building && CheckIfCloseEnought())
         {
             SetWagonsPositions2();
         }
@@ -114,6 +131,7 @@ public class TrainWagonsController : MonoBehaviour
 
     private Quaternion GetWagonRotation(int wagonIndex)
     {
+        return Quaternion.identity;
         Vector3 target;
         if(wagonIndex == 0)
         {
