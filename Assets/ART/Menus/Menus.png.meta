@@ -140,7 +140,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,7 +162,7 @@ TextureImporter:
         width: 174
         height: 173
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,7 +184,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,7 +206,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,7 +228,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,8 +250,8 @@ TextureImporter:
         width: 98
         height: 8
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 4, y: 2, z: 4, w: 2}
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: Menus_6
       rect:
         serializedVersion: 2
-        x: 6
-        y: 349
-        width: 68
-        height: 12
+        x: 4
+        y: 347
+        width: 72
+        height: 15
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -281,6 +281,72 @@ TextureImporter:
       bones: []
       spriteID: 60effb7a01acdba4ea4b75c400284a06
       internalID: -521228984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_7
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 329
+        width: 61
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23af8e391f93c18479b4452dbdf9a7a5
+      internalID: -1742011945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 297
+        width: 118
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86186d43d8e778540ac753ff25945c23
+      internalID: -1633125280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 240
+        width: 270
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac7252bfe43dbb47928732e61f3f96f
+      internalID: -1300889464
       vertices: []
       indices: 
       edges: []
@@ -302,6 +368,12 @@ TextureImporter:
       Menus_0: 5478052702628930731
       Menus_1: 427260347694645255
       Menus_10: -647366908
+      Menus_11: -2069526661
+      Menus_12: 2044209339
+      Menus_13: -1501722188
+      Menus_14: -298517771
+      Menus_15: -671354418
+      Menus_16: 1892826203
       Menus_2: 5913490128162924437
       Menus_3: -941043542
       Menus_4: -1243158087
