@@ -1,16 +1,28 @@
+using System;
 using UnityEngine;
 
 public class Base : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField]
+    private GameplayManager gameplayManager;
+    [SerializeField]
+    private float startingHP;
+    [SerializeField]
+    private HealthController healthController;
+
+    private void OnEnable()
     {
-        
+        healthController.Death += OnDeath;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnDisable()
     {
-        
+        healthController.Death -= OnDeath;
+    }
+
+    private void OnDeath()
+    {
+        gameplayManager.RemoveBase(this);
+        Debug.LogError("Despawn");
     }
 }

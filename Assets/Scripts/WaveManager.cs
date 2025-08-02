@@ -13,8 +13,6 @@ public class WaveManager : MonoBehaviour
     private float distanceFromCenter;
     [SerializeField]
     private GameplayManager gameplayManager;
-    [SerializeField]
-    private List<Base> bases;
 
     public List<Enemy> SpawnedEnemies => spawnedEnemies;
 
@@ -28,12 +26,12 @@ public class WaveManager : MonoBehaviour
 
     private void OnEnable()
     {
-        Enemy.Death += OnEnemyDeath;
+        Enemy.Despawned += OnEnemyDespawn;
     }
 
     private void OnDisable()
     {
-        Enemy.Death -= OnEnemyDeath;
+        Enemy.Despawned -= OnEnemyDespawn;
     }
 
     private void Update()
@@ -74,7 +72,7 @@ public class WaveManager : MonoBehaviour
         spawnedEnemies.Add(SpawnInPlace(enemyData, position));
     }
 
-    private void OnEnemyDeath(Enemy obj)
+    private void OnEnemyDespawn(Enemy obj)
     {
         spawnedEnemies.Remove(obj);
     }
@@ -85,7 +83,7 @@ public class WaveManager : MonoBehaviour
         newEnemy.SetStats(enemy.health, enemy.speed);
         float distance = float.MaxValue;
         Base targetBase = null;
-        foreach(var singleBase in bases)
+        foreach(var singleBase in gameplayManager.AllBases)
         {
             float newDistance = Vector3.Distance(position, singleBase.transform.position);
             if (newDistance < distance)
