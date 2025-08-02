@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
   health: 100
-  speed: 1
+  speed: 0.3

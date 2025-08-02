@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_Name
-      value: NormalEnemy
+      value: FastEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 6120451591918760344, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_LocalPosition.x
