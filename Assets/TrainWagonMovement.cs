@@ -35,8 +35,11 @@ public class TrainWagonMovement : MonoBehaviour
 
     internal Vector3 GetPositionForWagon(int wagonIndex)
     {
-        float timeForWagon = Math.Abs(currentSplineTime - (timeBackForWagon * (wagonIndex + 1)));
-        timeBackForWagon %= 1f;
+        float timeForWagon = currentSplineTime - (timeBackForWagon * (wagonIndex + 1));
+        if(timeForWagon < 0)
+        {
+            timeForWagon += 1;
+        }
         return spline.EvaluatePosition(timeForWagon);
     }
 }
