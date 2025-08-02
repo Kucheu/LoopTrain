@@ -11,9 +11,11 @@ public class Bullet : MonoBehaviour
     [SerializeField]
     private float damage;
 
+    public Transform Target => target;
     public float Speed => speed;
 
     private bool isHit = false;
+    private Transform target;
 
     private void OnEnable()
     {
@@ -34,6 +36,20 @@ public class Bullet : MonoBehaviour
         {
             isHit = true;
             healthController.DealDamage(damage);
+            Destroy(gameObject);
+        }
+    }
+
+    public void SetTarget(Transform target)
+    {
+        this.target = target;
+    }
+
+    public void Remove()
+    {
+        if(!isHit)
+        {
+            isHit = true;
             Destroy(gameObject);
         }
     }
