@@ -25,6 +25,12 @@ public class SoundManager : MonoBehaviourSingleton<SoundManager>
     public void SetSoundsVolume(float volume)
     {
         soundsVolume = Mathf.Clamp(volume, 0f, 1f);
+        ChangeSoundVolume();
+        SaveSettings();
+    }
+
+    private void ChangeSoundVolume()
+    {
         buttonSound.volume = soundsVolume;
         gameSoundSource.volume = soundsVolume;
     }
@@ -32,6 +38,12 @@ public class SoundManager : MonoBehaviourSingleton<SoundManager>
     public void SetMusicVolume(float volume)
     {
         musicVolume = Mathf.Clamp(volume, 0f, 1f);
+        ChangeMusicVolume();
+        SaveSettings();
+    }
+
+    private void ChangeMusicVolume()
+    {
         musicSource.volume = musicVolume;
     }
 
@@ -42,11 +54,15 @@ public class SoundManager : MonoBehaviourSingleton<SoundManager>
 
     private void LoadSettings()
     {
-
+        musicVolume = PlayerPrefs.GetFloat("Music", 1f);
+        soundsVolume = PlayerPrefs.GetFloat("Sound", 1f);
+        ChangeMusicVolume();
+        ChangeSoundVolume();
     }
 
     private void SaveSettings()
     {
-
+        PlayerPrefs.SetFloat("Music", musicVolume);
+        PlayerPrefs.SetFloat("Sound", soundsVolume);
     }
 }
