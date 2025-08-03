@@ -333,8 +333,8 @@ TextureImporter:
       name: Menus_9
       rect:
         serializedVersion: 2
-        x: 33
-        y: 240
+        x: 6
+        y: 257
         width: 270
         height: 31
       alignment: 0
@@ -377,7 +377,7 @@ TextureImporter:
       name: Menus_11
       rect:
         serializedVersion: 2
-        x: 415
+        x: 416
         y: 448
         width: 48
         height: 48
@@ -399,7 +399,7 @@ TextureImporter:
       name: Menus_13
       rect:
         serializedVersion: 2
-        x: 463
+        x: 464
         y: 448
         width: 48
         height: 48
@@ -479,6 +479,94 @@ TextureImporter:
       bones: []
       spriteID: 10b92ceef503e684b8804428d8df2316
       internalID: -298517771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_12
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54e18b1f8f30caf47b1eff98a421e354
+      internalID: 1543469635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_15
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3afc7212e2a0d444aa96627f37092a8
+      internalID: -1252246735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_16
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27a697e6814aef645bd3649091982bef
+      internalID: 926104098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_17
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 304
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de009118a6101c34ea61c54ea17b2a2e
+      internalID: 78830110
       vertices: []
       indices: 
       edges: []
