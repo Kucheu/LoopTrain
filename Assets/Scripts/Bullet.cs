@@ -8,14 +8,13 @@ public class Bullet : MonoBehaviour
 
     [SerializeField]
     private float speed;
-    [SerializeField]
-    private float damage;
 
     public Transform Target => target;
     public float Speed => speed;
 
     private bool isHit = false;
     private Transform target;
+    private float damage;
 
     private void OnEnable()
     {
@@ -43,6 +42,11 @@ public class Bullet : MonoBehaviour
     public void SetTarget(Transform target)
     {
         this.target = target;
+    }
+
+    public void SetDamage(float newDamage)
+    {
+        damage = newDamage;
     }
 
     public void Remove()

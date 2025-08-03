@@ -4,6 +4,7 @@ using UnityEngine;
 public class HealthController : MonoBehaviour
 {
     public event Action<float> Damaged;
+    public event Action<float> Healed;
     public event Action Death;
 
     public float MaxHealth => maxHealth;
@@ -15,8 +16,9 @@ public class HealthController : MonoBehaviour
 
     public void SetHealt(float newHealth)
     {
+        float change = newHealth - maxHealth;
         maxHealth = newHealth;
-        currentHealth = newHealth;
+        currentHealth += change;
     }
 
     public void DealDamage(float damage)
@@ -27,5 +29,11 @@ public class HealthController : MonoBehaviour
         {
             Death?.Invoke();
         }
+    }
+
+    public void Heal(float hp)
+    {
+        currentHealth = Mathf.Clamp(currentHealth + hp, 0, MaxHealth);
+        Healed?.Invoke(hp);
     }
 }

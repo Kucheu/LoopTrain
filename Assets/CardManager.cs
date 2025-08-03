@@ -24,7 +24,7 @@ public class CardManager : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Not Implementet");
+            StatsManager.Instance.SetStat(cardType);
             gameplayManager.ChangeGameState(GameState.Playing);
         }
         cardsUIObject.SetActive(false);

@@ -22,6 +22,7 @@ public class NormalWagonWeapon : WagonWeapon
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             var bullet = Instantiate(bulletPrefab, transform.position, rotation);
             bullet.SetTarget(target.transform);
+            bullet.SetDamage(damage * StatsManager.Instance.DamageMultiplier);
             weapon.transform.rotation = rotation;
         }
         

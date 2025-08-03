@@ -14,12 +14,13 @@ public class TrainWagonMovement : MonoBehaviour
     private float timeBackForWagon;
 
     private float currentSplineTime;
+    private float timeMultiplier = 1f;
 
     private void Update()
     {
         if (gameplayManager.CurrentGameState == GameState.Playing)
         {
-            currentSplineTime += speed * Time.deltaTime;
+            currentSplineTime += speed * timeMultiplier * Time.deltaTime;
             currentSplineTime %= 1f;
         }
 
@@ -41,5 +42,10 @@ public class TrainWagonMovement : MonoBehaviour
             timeForWagon += 1;
         }
         return spline.EvaluatePosition(timeForWagon);
+    }
+
+    public void SetTimeMultiplier(float timeMultiplier)
+    {
+        this.timeMultiplier = timeMultiplier;
     }
 }

@@ -11,6 +11,8 @@ public abstract class WagonWeapon : MonoBehaviour
 
     [SerializeField]
     private float cooldown;
+    [SerializeField]
+    protected float damage;
 
     private float currentTimeBetweenAttacks;
 
