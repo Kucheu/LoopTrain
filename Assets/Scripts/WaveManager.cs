@@ -13,6 +13,8 @@ public class WaveManager : MonoBehaviour
     private float distanceFromCenter;
     [SerializeField]
     private GameplayManager gameplayManager;
+    [SerializeField]
+    private TimerManager timerManager;
 
     public List<Enemy> SpawnedEnemies => spawnedEnemies;
 
@@ -57,7 +59,7 @@ public class WaveManager : MonoBehaviour
     private void Spawn()
     {
         var enemyDataToSpawn = enemies[UnityEngine.Random.Range(0, enemies.Count)];
-        int numberEnemiesToSpawn = UnityEngine.Random.Range(0, 5);
+        int numberEnemiesToSpawn = UnityEngine.Random.Range(1 + (int)Math.Floor(timerManager.CurrentTime/60f), 2 + (int)Math.Floor(timerManager.CurrentTime / 40f));
         for(int i = 0; i < numberEnemiesToSpawn; i++)
         {
             Vector3 position = new Vector3(UnityEngine.Random.Range(-1f, 1f), UnityEngine.Random.Range(-1f, 1f), 0);
@@ -80,7 +82,7 @@ public class WaveManager : MonoBehaviour
     private Enemy SpawnInPlace(EnemyData enemy, Vector3 position)
     {
         var newEnemy = Instantiate(enemy.enemyPrefab, position, Quaternion.identity).GetComponent<Enemy>();
-        newEnemy.SetStats(enemy.health, enemy.speed);
+        newEnemy.SetStats(enemy.health * GetMultipier(), enemy.speed);
         float distance = float.MaxValue;
         Base targetBase = null;
         foreach(var singleBase in gameplayManager.AllBases)
@@ -94,5 +96,10 @@ public class WaveManager : MonoBehaviour
         }
         newEnemy.SetTarget(targetBase);
         return newEnemy;
+    }
+
+    private float GetMultipier()
+    {
+        return 1f + ((timerManager.CurrentTime / 10f) * 0.01f);
     }
 }

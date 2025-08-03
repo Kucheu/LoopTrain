@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2073940937834301528, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3850679877105380084, guid: 50c3f68ebe6bf3a4d83221d23c038716, type: 3}
+    - target: {fileID: 3200670155973522587, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -3850679877105380084, guid: 50c3f68ebe6bf3a4d83221d23c038716, type: 3}
     - target: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_Name
       value: BigEnemy
@@ -51,6 +59,10 @@ PrefabInstance:
     - target: {fileID: 6120451591918760344, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539417618677646309, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Radius
+      value: 1.11
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

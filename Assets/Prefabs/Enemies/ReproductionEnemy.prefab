@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2073940937834301528, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3501960951845500111, guid: ef6a64019e1a9d641a2000b766daa788, type: 3}
+    - target: {fileID: 3200670155973522587, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 3501960951845500111, guid: ef6a64019e1a9d641a2000b766daa788, type: 3}
     - target: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_Name
       value: ReproductionEnemy
