@@ -194,14 +194,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -1501722188, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -265,13 +265,14 @@ MonoBehaviour:
   cardsData:
   - cardType: 0
     cardName: Damage Up
-    cardSprite: {fileID: 6228003625069930089, guid: 4ebf81e005b4e044dbdbbdc8c638bdef, type: 3}
+    cardSprite: {fileID: -298517771, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
   - cardType: 1
     cardName: Hp Up
-    cardSprite: {fileID: -1707130124669590487, guid: 4ebf81e005b4e044dbdbbdc8c638bdef, type: 3}
+    cardSprite: {fileID: -2069526661, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
   - cardType: 2
     cardName: Hp Regen Up
-    cardSprite: {fileID: -6565690593101790247, guid: 4ebf81e005b4e044dbdbbdc8c638bdef, type: 3}
+    cardSprite: {fileID: -1501722188, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
+  cardManager: {fileID: 0}
 --- !u!1 &5589497309496794467
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +340,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -647366908, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

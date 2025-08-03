@@ -33,7 +33,10 @@ public class HealthController : MonoBehaviour
 
     public void Heal(float hp)
     {
-        currentHealth = Mathf.Clamp(currentHealth + hp, 0, MaxHealth);
-        Healed?.Invoke(hp);
+        if(currentHealth < MaxHealth)
+        {
+            currentHealth = Mathf.Clamp(currentHealth + hp, 0, MaxHealth);
+            Healed?.Invoke(hp);
+        }
     }
 }

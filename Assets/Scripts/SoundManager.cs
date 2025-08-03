@@ -15,7 +15,7 @@ public class SoundManager : MonoBehaviourSingleton<SoundManager>
     public float SoundsVolume => soundsVolume;
     public float MusicVolume => musicVolume;
 
-    private void Awake()
+    private new void Awake()
     {
         base.Awake();
         LoadSettings();
