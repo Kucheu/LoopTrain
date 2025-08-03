@@ -11,7 +11,7 @@ PrefabInstance:
     - target: {fileID: 1893070887005819428, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
       propertyPath: wagonWeapon
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 4257890486658079623}
     - target: {fileID: 2402154616119396646, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
       propertyPath: cooldown
       value: 1.2
