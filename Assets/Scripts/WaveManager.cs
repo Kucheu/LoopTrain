@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class WaveManager : MonoBehaviour
+public class WaveManager : MonoBehaviourSingleton<WaveManager>
 {
     [SerializeField]
     private List<EnemyData> enemies;
@@ -21,8 +21,9 @@ public class WaveManager : MonoBehaviour
     private float timeFromLastSpawn;
     private List<Enemy> spawnedEnemies;
 
-    private void Awake()
+    private new void Awake()
     {
+        base.Awake();
         spawnedEnemies = new();
     }
 

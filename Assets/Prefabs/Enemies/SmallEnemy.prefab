@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &50149161035435564
+--- !u!1001 &4369430973065134612
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -8,17 +8,13 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2073940937834301528, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 3501960951845500111, guid: ef6a64019e1a9d641a2000b766daa788, type: 3}
     - target: {fileID: 3200670155973522587, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 3501960951845500111, guid: ef6a64019e1a9d641a2000b766daa788, type: 3}
+      objectReference: {fileID: -7982577380677918341, guid: 203dffbcb86fbcd4ea3036dafdf4eae7, type: 3}
     - target: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_Name
-      value: ReproductionEnemy
+      value: SmallEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 6120451591918760344, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -60,41 +56,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6539417618677646309, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
+      propertyPath: m_Radius
+      value: 0.29
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 4422453046513920154}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
---- !u!114 &1777564208815199616 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1736427238861953964, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
-  m_PrefabInstance: {fileID: 50149161035435564}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5524537562431986242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3aa1110fa616c464a968e0b6bfa24d26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &5524537562431986242 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5483470929554216046, guid: 1da1a13c86b44d944a76d49924a66f8e, type: 3}
-  m_PrefabInstance: {fileID: 50149161035435564}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &4422453046513920154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5524537562431986242}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f469c0c3297e7444d9c5db1d0cc91e25, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthController: {fileID: 1777564208815199616}
-  enemyToSpawn: {fileID: 11400000, guid: 3e4cb2022441bcf4c94bc6b0fef968e2, type: 2}
