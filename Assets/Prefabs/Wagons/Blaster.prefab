@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 0.5
-  damage: 4
+  damage: 6
   bulletPrefab: {fileID: 6725210598390892637, guid: 7fd36dc91cb8e6a4191aa4218dd19cc1, type: 3}
   attackDistance: 10
   enemyLayerMask:

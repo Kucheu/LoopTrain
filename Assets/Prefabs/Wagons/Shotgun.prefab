@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1893070887005819428, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
+      propertyPath: wagonWeapon
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2402154616119396646, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
       propertyPath: cooldown
       value: 1.2
@@ -91,7 +95,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cooldown: 1.5
-  damage: 8
+  damage: 10
   bulletPrefab: {fileID: 6725210598390892637, guid: 7fd36dc91cb8e6a4191aa4218dd19cc1, type: 3}
   attackDistance: 7
   enemyLayerMask:
