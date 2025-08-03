@@ -55,7 +55,8 @@ public class TrainWagonsController : MonoBehaviour
     public void StartAddingWagon(WagonData wagonData)
     {
         currentAddingWagon = wagonData;
-        gameplayManager.ChangeGameState(GameState.Building);
+        AddWagonOnPosition(currentWagons.Count);
+        //gameplayManager.ChangeGameState(GameState.Building);
     }
 
     private void AddWagonOnPosition(int index)

@@ -31,7 +31,7 @@ public class CardManager : MonoBehaviour
     }
 
     [ContextMenu("Get Cards")]
-    private void GetCardsOptions()
+    public void GetCardsOptions()
     {
         gameplayManager.ChangeGameState(GameState.Cards);
         int numberOfAllCards = wagons.Count + otherCards.Count;

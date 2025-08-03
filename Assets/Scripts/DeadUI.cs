@@ -8,8 +8,6 @@ public class DeadUI : MonoBehaviour
     private GameplayManager gameplayManager;
     [SerializeField]
     private GameObject deadUI;
-    [SerializeField]
-    private TextMeshProUGUI timerText;
 
     private void OnEnable()
     {
@@ -24,6 +22,5 @@ public class DeadUI : MonoBehaviour
     private void OnGameEnded()
     {
         deadUI.SetActive(true);
-        timerText.text = "00:00";
     }
 }
