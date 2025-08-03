@@ -131,7 +131,7 @@ public class TrainWagonsController : MonoBehaviour
     {
         for(int i = 0; i < currentWagons.Count; i++)
         {
-            currentWagons[i].SetPosition(GetWagonPosition(i), transform.rotation);
+            currentWagons[i].SetPosition(GetWagonPosition(i), GetWagonRotation(i));
         }
     }
 
@@ -142,8 +142,6 @@ public class TrainWagonsController : MonoBehaviour
 
     private Quaternion GetWagonRotation(int wagonIndex)
     {
-        return Quaternion.identity;
-        /*
         Vector3 target;
         if(wagonIndex == 0)
         {
@@ -156,6 +154,6 @@ public class TrainWagonsController : MonoBehaviour
         Vector3 relativePos = target - currentWagons[wagonIndex].transform.position;
         float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
         return Quaternion.AngleAxis(angle, Vector3.forward);
-        */
+        
     }
 }
