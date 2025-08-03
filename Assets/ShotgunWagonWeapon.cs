@@ -19,6 +19,7 @@ public class ShotgunWagonWeapon : WagonWeapon
             }
             rotation = Quaternion.AngleAxis(angle + 20, Vector3.forward);
             weapon.transform.rotation = rotation;
+            Shooted?.Invoke();
         }
     }
 }

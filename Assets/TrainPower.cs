@@ -20,27 +20,17 @@ public class TrainPower : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.W))
+        if(Input.GetKey(KeyCode.W))
         {
-            if (powerState == PowerState.Slow)
-            {
-                DisablePower();
-            }
-            else
-            {
-                EnableSpeed();
-            }
+            EnableSpeed();
         }
-        else if(Input.GetKeyDown(KeyCode.S))
+        else if(Input.GetKey(KeyCode.S))
         {
-            if (powerState == PowerState.Fast)
-            {
-                DisablePower();
-            }
-            else
-            {
-                EnableSlow();
-            }
+            EnableSlow();
+        }
+        else
+        {
+            DisablePower();
         }
     }
 

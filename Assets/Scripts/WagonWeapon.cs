@@ -1,7 +1,10 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public abstract class WagonWeapon : MonoBehaviour
 {
+    public Action Shooted;
+
     public float Cooldown => cooldown;
     public float CurrentTimeBetweenAttacks
     {

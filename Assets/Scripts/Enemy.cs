@@ -14,7 +14,7 @@ public class Enemy : MonoBehaviour
 
     private float speed;
     private Base target;
-    private float damage = 100f;
+    private float damage = 25f;
 
     public void SetStats(float newHealth, float newSpeed)
     {

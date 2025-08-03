@@ -14,7 +14,7 @@ public class NormalWagonWeapon : WagonWeapon
             bullet.SetTarget(target.transform);
             bullet.SetDamage(damage * StatsManager.Instance.DamageMultiplier);
             weapon.transform.rotation = rotation;
+            Shooted?.Invoke();
         }
-        
     }
 }

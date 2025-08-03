@@ -100,6 +100,7 @@ GameObject:
   - component: {fileID: 1736427238861953964}
   - component: {fileID: 6539417618677646309}
   - component: {fileID: 6773567930700667392}
+  - component: {fileID: 7042160705573733183}
   m_Layer: 6
   m_Name: NormalEnemy
   m_TagString: Untagged
@@ -196,4 +197,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b66aa76c02171c49b71e2b834085b77, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  healthController: {fileID: 1736427238861953964}
+--- !u!114 &7042160705573733183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5483470929554216046}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40e478fafd9ed2a488e423400f9fd50a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: 4126893629fd3c244bf1810f5ac08abc, type: 3}
   healthController: {fileID: 1736427238861953964}

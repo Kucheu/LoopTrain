@@ -8,6 +8,8 @@ public class ExperienceManager : MonoBehaviour
     private CardManager cardManager;
     [SerializeField]
     private Slider expSlider;
+    [SerializeField]
+    private AudioClip lvlUpAudio;
 
     private int nextExperience = 10;
     private int currentExp = 0;
@@ -37,6 +39,7 @@ public class ExperienceManager : MonoBehaviour
         cardManager.GetCardsOptions();
         currentExp -= nextExperience;
         nextExperience = (int)(nextExperience * 1.2f);
+        SoundManager.Instance.PlaySound(lvlUpAudio);
     }
 
     private void ShowExp()
