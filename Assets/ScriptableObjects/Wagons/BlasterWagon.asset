@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f39820b774b2884581d8a609943676a, type: 3}
+  m_Name: BlasterWagon
+  m_EditorClassIdentifier: 
+  wagonPrefab: {fileID: 7753857116898213984, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
+  wagonSprite: {fileID: -1307209799, guid: 8f6c67d512756b44083929eb723c9de6, type: 3}
+  wagonName: Blaster

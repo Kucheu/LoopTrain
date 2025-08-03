@@ -13,12 +13,16 @@ public class TrainWagonsController : MonoBehaviour
     private TrainWagonMovement TrainWagonMovement;
     [SerializeField]
     private GameplayManager gameplayManager;
+    [SerializeField]
+    private WagonData firstWagon;
 
     List<WagonController> currentWagons;
     List<int> closeWagons;
+    private WagonData currentAddingWagon;
 
     private void Awake()
     {
+        currentAddingWagon = firstWagon;
         currentWagons = new();
         closeWagons = new();
         currentWagons.AddRange(GetComponentsInChildren<WagonController>());
@@ -48,9 +52,15 @@ public class TrainWagonsController : MonoBehaviour
         }
     }
 
+    public void StartAddingWagon(WagonData wagonData)
+    {
+        currentAddingWagon = wagonData;
+        gameplayManager.ChangeGameState(GameState.Building);
+    }
+
     private void AddWagonOnPosition(int index)
     {
-        WagonController newWagon = Instantiate(wagonPrefab);
+        WagonController newWagon = Instantiate(currentAddingWagon.WagonPrefab);
         currentWagons.Add(newWagon);
         int currentIndex = currentWagons.Count - 1;
         while(currentIndex > index)
@@ -83,9 +93,9 @@ public class TrainWagonsController : MonoBehaviour
         closeWagons.Clear();
         for (int i = 0; i < currentWagons.Count; i++)
         {
-            if(Vector3.Distance(GetWagonPosition(i), worldMousePosition) < 0.1f)
+            if(Vector3.Distance(GetWagonPosition(i), worldMousePosition) < 1.1f)
             {
-                if(i == 0 && currentWagons.Count > 1 && Vector3.Distance(GetWagonPosition(1), worldMousePosition) >= 0.1f)
+                if(i == 0 && currentWagons.Count > 1 && Vector3.Distance(GetWagonPosition(1), worldMousePosition) >= 1.1f)
                 {
                     closeWagons.Add(-1);
                 }

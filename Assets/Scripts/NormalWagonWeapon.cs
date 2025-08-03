@@ -8,6 +8,9 @@ public class NormalWagonWeapon : WagonWeapon
     private float attackDistance;
     [SerializeField]
     private LayerMask enemyLayerMask;
+    [SerializeField]
+    private GameObject weapon;
+
 
     public override void Attack()
     {
@@ -19,6 +22,7 @@ public class NormalWagonWeapon : WagonWeapon
             Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             var bullet = Instantiate(bulletPrefab, transform.position, rotation);
             bullet.SetTarget(target.transform);
+            weapon.transform.rotation = rotation;
         }
         
     }
