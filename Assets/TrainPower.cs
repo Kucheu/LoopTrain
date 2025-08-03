@@ -20,6 +20,33 @@ public class TrainPower : MonoBehaviour
 
     private void Update()
     {
+        if(Input.GetKeyDown(KeyCode.W))
+        {
+            if (powerState == PowerState.Slow)
+            {
+                DisablePower();
+            }
+            else
+            {
+                EnableSpeed();
+            }
+        }
+        else if(Input.GetKeyDown(KeyCode.S))
+        {
+            if (powerState == PowerState.Fast)
+            {
+                DisablePower();
+            }
+            else
+            {
+                EnableSlow();
+            }
+        }
+    }
+
+    /*
+    private void Update()
+    {
         if (gameplayManager.CurrentGameState != GameState.Playing)
             return;
 
@@ -55,17 +82,17 @@ public class TrainPower : MonoBehaviour
             }
         }
     }
-
+    */
     private void EnableSlow()
     {
-        trainWagonMovement.SetTimeMultiplier(0.5f);
-        powerState = PowerState.on;
+        trainWagonMovement.SetTimeMultiplier(0.75f);
+        powerState = PowerState.Slow;
     }
 
     private void EnableSpeed()
     {
-        trainWagonMovement.SetTimeMultiplier(2f);
-        powerState = PowerState.on;
+        trainWagonMovement.SetTimeMultiplier(1.5f);
+        powerState = PowerState.Fast;
     }
 
     private void DisablePower()
@@ -77,6 +104,7 @@ public class TrainPower : MonoBehaviour
     private enum PowerState
     {
         off = 0,
-        on = 1,
+        Slow = 1,
+        Fast = 2
     }
 }
