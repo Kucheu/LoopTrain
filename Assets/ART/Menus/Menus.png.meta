@@ -140,7 +140,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -162,7 +162,7 @@ TextureImporter:
         width: 174
         height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -184,7 +184,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -206,7 +206,7 @@ TextureImporter:
         width: 118
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -228,7 +228,7 @@ TextureImporter:
         width: 14
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -250,7 +250,7 @@ TextureImporter:
         width: 98
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -272,7 +272,7 @@ TextureImporter:
         width: 72
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -294,7 +294,7 @@ TextureImporter:
         width: 61
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -316,7 +316,7 @@ TextureImporter:
         width: 118
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -338,7 +338,7 @@ TextureImporter:
         width: 270
         height: 31
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -347,6 +347,138 @@ TextureImporter:
       bones: []
       spriteID: 9ac7252bfe43dbb47928732e61f3f96f
       internalID: -1300889464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_10
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 356
+        width: 88
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9bb0e14c4285643913c6a03b81e331
+      internalID: -647366908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_11
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 448
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7860ab233ddb82945850c58e1e39575c
+      internalID: -2069526661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_13
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 448
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77091e2b8abb4b8438d82f1e8bb6509a
+      internalID: -1501722188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_21
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 320
+        width: 96
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd375767e846e4408abb4e7687d7472
+      internalID: -989794489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_22
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 310
+        width: 96
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce07e7f2ade70374fb47b695025cc98b
+      internalID: 426437565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Menus_14
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 384
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10b92ceef503e684b8804428d8df2316
+      internalID: -298517771
       vertices: []
       indices: 
       edges: []
@@ -369,12 +501,18 @@ TextureImporter:
       Menus_1: 427260347694645255
       Menus_10: -647366908
       Menus_11: -2069526661
-      Menus_12: 2044209339
+      Menus_12: 1543469635
       Menus_13: -1501722188
       Menus_14: -298517771
-      Menus_15: -671354418
-      Menus_16: 1892826203
+      Menus_15: -1252246735
+      Menus_16: 926104098
+      Menus_17: 78830110
+      Menus_18: -1627260726
+      Menus_19: -1023426377
       Menus_2: 5913490128162924437
+      Menus_20: -341043087
+      Menus_21: -989794489
+      Menus_22: 426437565
       Menus_3: -941043542
       Menus_4: -1243158087
       Menus_5: 985683430
