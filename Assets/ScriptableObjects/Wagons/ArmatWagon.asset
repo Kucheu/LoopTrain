@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ArmatWagon
   m_EditorClassIdentifier: 
   wagonPrefab: {fileID: 2434418336868338558, guid: 4ae9586cd7988d741a677b8545bfb778, type: 3}
-  wagonSprite: {fileID: -868884991, guid: 8f6c67d512756b44083929eb723c9de6, type: 3}
-  wagonName: Armat
+  wagonSprite: {fileID: -292587269228196321, guid: 9caa567e083e1c9479275d4c71cdb1b5, type: 3}
+  wagonName: Canon

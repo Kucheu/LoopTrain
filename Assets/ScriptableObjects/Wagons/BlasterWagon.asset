@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: BlasterWagon
   m_EditorClassIdentifier: 
   wagonPrefab: {fileID: 7753857116898213984, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
-  wagonSprite: {fileID: -1307209799, guid: 8f6c67d512756b44083929eb723c9de6, type: 3}
-  wagonName: Blaster
+  wagonSprite: {fileID: -2184116205440239278, guid: 53d49ee3e8939144d995945ccca2b023, type: 3}
+  wagonName: MachineGun

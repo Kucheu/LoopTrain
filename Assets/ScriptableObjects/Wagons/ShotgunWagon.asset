@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ShotgunWagon
   m_EditorClassIdentifier: 
   wagonPrefab: {fileID: 3089352476875540614, guid: 4a5e643673ace044e9deb2675b532f5e, type: 3}
-  wagonSprite: {fileID: 2066139669, guid: 8f6c67d512756b44083929eb723c9de6, type: 3}
+  wagonSprite: {fileID: 1137571274128960489, guid: a64a760645117b94ea8ec045598944f9, type: 3}
   wagonName: Shotgun

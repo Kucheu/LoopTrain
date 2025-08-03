@@ -13,6 +13,14 @@ public abstract class WagonWeapon : MonoBehaviour
     private float cooldown;
     [SerializeField]
     protected float damage;
+    [SerializeField]
+    protected Bullet bulletPrefab;
+    [SerializeField]
+    protected float attackDistance;
+    [SerializeField]
+    protected LayerMask enemyLayerMask;
+    [SerializeField]
+    protected GameObject weapon;
 
     private float currentTimeBetweenAttacks;
 
