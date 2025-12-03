@@ -884,12 +884,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cooldown: 0
   damage: 0
-  bulletPrefab: {fileID: 0}
   attackDistance: 0
   enemyLayerMask:
     serializedVersion: 2
     m_Bits: 0
-  weapon: {fileID: 0}
 --- !u!1 &391350642
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1086,7 @@ MonoBehaviour:
   wagonPrefab: {fileID: 7753857116898213984, guid: 4c8f4beedfddcce48873de222bf93432, type: 3}
   TrainWagonMovement: {fileID: 483709222}
   gameplayManager: {fileID: 1937087827}
-  firstWagon: {fileID: 11400000, guid: 5f3059e66ff63f1448527b67014f6486, type: 2}
+  firstWagon: {fileID: 11400000, guid: 09fa9998ac37424499614d91b1362e15, type: 2}
 --- !u!114 &483709220
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5099,6 +5097,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 68540516cf4b0044b8ac56144c49423b, type: 2}
   - {fileID: 11400000, guid: 5f3059e66ff63f1448527b67014f6486, type: 2}
   - {fileID: 11400000, guid: f5b6974fa57b4fb4b85af4014cf45ab5, type: 2}
+  - {fileID: 11400000, guid: 09fa9998ac37424499614d91b1362e15, type: 2}
   otherCards: 000000000100000002000000
   gameplayManager: {fileID: 1937087827}
   cardsUIObject: {fileID: 1593179782}

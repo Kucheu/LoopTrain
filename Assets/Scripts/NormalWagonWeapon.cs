@@ -2,6 +2,11 @@
 
 public class NormalWagonWeapon : WagonWeapon
 {
+    [SerializeField]
+    protected Bullet bulletPrefab;
+    [SerializeField]
+    protected GameObject weapon;
+
     public override void Attack()
     {
         var target = Physics2D.OverlapCircle(transform.position, attackDistance, enemyLayerMask);
