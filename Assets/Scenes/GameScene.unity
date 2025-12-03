@@ -5001,6 +5001,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6261f42aee8be37448db2d5c25f77558, type: 2}
   - {fileID: 11400000, guid: b693f1907b977da4381740aaf2d63d39, type: 2}
   - {fileID: 11400000, guid: 0eb9010545eef35499bbc6dc836ba392, type: 2}
+  bosses:
+  - timeToSpawn: 300
+    bossToSpawn: {fileID: 11400000, guid: 40d8df1e6a99c1046ade96094f1fee6d, type: 2}
+    amountToSpawn: 1
+    stopSpawningBeforeDead: 1
   timeBetweenSpawns: 5
   distanceFromCenter: 15
   gameplayManager: {fileID: 1937087827}

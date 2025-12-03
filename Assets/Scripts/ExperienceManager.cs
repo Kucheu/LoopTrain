@@ -26,7 +26,7 @@ public class ExperienceManager : MonoBehaviour
 
     private void AddExp(Enemy obj)
     {
-        currentExp += 2;
+        currentExp += (int)(2 * obj.ExperienceMultiplayer);
         if(currentExp >= nextExperience)
         {
             LevelUp();
