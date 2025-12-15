@@ -10,6 +10,8 @@ public class MainMenuUI : MonoBehaviour
     private GameObject mainMenuObject;
     [SerializeField]
     private GameObject settingsObject;
+    [SerializeField]
+    private GameObject upgradeObject;
 
     public void StartGame()
     {
@@ -20,12 +22,21 @@ public class MainMenuUI : MonoBehaviour
     {
         mainMenuObject.SetActive(false);
         settingsObject.SetActive(true);
+        upgradeObject.SetActive(false);
     }
 
     public void OpenMainMenu()
     {
         mainMenuObject.SetActive(true);
         settingsObject.SetActive(false);
+        upgradeObject.SetActive(false);
+    }
+
+    public void OpenUpgradeMenu()
+    {
+        mainMenuObject.SetActive(false);
+        settingsObject.SetActive(false);
+        upgradeObject.SetActive(true);
     }
 
     public void QuitGame()
