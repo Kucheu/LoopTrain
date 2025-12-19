@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8c2eaf14b14d71542b2bbb90081ec664, type: 3}
-  m_Name: Test1 2
+  m_Name: Test1 3
   m_EditorClassIdentifier: 
   id: 3
   maxLevel: 20
   lvlCosts: 0100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f0000001000000011000000120000001300000014000000
-  upgradeName: HpRegen
+  upgradeName: Null
   icon: {fileID: -1243158087, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
-  effect: {fileID: 11400000, guid: 761884b553cf1964b96be00739204b5b, type: 2}
+  effect: {fileID: 11400000, guid: bf0bdeb9eecdc074d88e86b227f5c274, type: 2}

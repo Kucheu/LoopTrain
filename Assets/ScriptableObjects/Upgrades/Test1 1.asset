@@ -15,5 +15,6 @@ MonoBehaviour:
   id: 2
   maxLevel: 1
   lvlCosts: 1e000000
-  upgradeName: Test2
+  upgradeName: MaxHp
   icon: {fileID: -2069526661, guid: 5c114ab1c7802f9459d95813814680a6, type: 3}
+  effect: {fileID: 11400000, guid: 4c95ce5f4b96a944ca63152a91af37a8, type: 2}

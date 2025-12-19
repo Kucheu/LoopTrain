@@ -15,5 +15,6 @@ MonoBehaviour:
   id: 1
   maxLevel: 3
   lvlCosts: 060000000a00000010000000
-  upgradeName: Test
+  upgradeName: Damage
   icon: {fileID: -7982577380677918341, guid: 203dffbcb86fbcd4ea3036dafdf4eae7, type: 3}
+  effect: {fileID: 11400000, guid: b284604e5ff4b9f4ab9cd6abb2d37465, type: 2}

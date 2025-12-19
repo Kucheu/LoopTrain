@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -18,6 +19,11 @@ public class UpgradeManager
                 instance = value;
             }
         }
+    }
+
+    public Dictionary<UpgradeSO, int> GetAllUpgrades()
+    {
+        return upgradeLevels;
     }
 
     private static UpgradeManager instance;
