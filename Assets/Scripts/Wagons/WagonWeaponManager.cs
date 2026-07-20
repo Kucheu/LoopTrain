@@ -47,20 +47,20 @@ public class WagonWeaponManager : MonoBehaviour
         List<Bullet> bulletsToRemove = new();
         foreach (var bullet in bullets)
         {
-            if(bullet.Target)
+            if(bullet.HasTarget)
             {
-                Vector3 relativePos = bullet.Target.position - bullet.transform.position;
+                Vector3 relativePos = bullet.Target - bullet.transform.position;
                 float angle = Mathf.Atan2(relativePos.y, relativePos.x) * Mathf.Rad2Deg;
                 bullet.transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
             }
 
             bullet.transform.position += (bullet.transform.right * bullet.Speed * Time.deltaTime);
-            if(bullet.transform.position.magnitude > distanceFromCenterToRemoveBullet)
+            if (bullet.transform.position.magnitude > distanceFromCenterToRemoveBullet)
             {
                 bulletsToRemove.Add(bullet);
             }
         }
-        foreach(var bulletToRemove in bulletsToRemove)
+        foreach (var bulletToRemove in bulletsToRemove)
         {
             bulletToRemove.Remove();
         }
